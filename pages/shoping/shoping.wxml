@@ -1,0 +1,12 @@
+<!--pages/shoping/shoping.wxml-->
+<view class="shop_item" wx:for="{{shopList}}" wx:key="id">
+  <image src="{{item.images[0]}}"></image>
+  <view class="message">
+    <text class="message_title">{{item.name}}</text>
+    <text class="message_phone">电话：{{m1.splitPhone(item.phone)}}</text>
+    <text class="message_where">地址：{{item.address}}</text>
+    <text class="message_time">营业时间：{{item.businessHours}}</text>
+  </view>
+</view>
+
+<wxs src="../../utils/tools.wxs" module="m1"></wxs>

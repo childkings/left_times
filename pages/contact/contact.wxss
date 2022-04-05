@@ -1,0 +1,6 @@
+/* pages/contact/contact.wxss */
+.color_box {
+  height: 120rpx;
+  margin: 20rpx;
+  color:white;
+}

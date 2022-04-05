@@ -1,0 +1,49 @@
+/* pages/home/home.wxss */
+swiper {
+  height: 350rpx;
+}
+swiper image {
+  width: 100%;
+  height: 100%;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(233, 233, 233);
+}
+.grid .grid_child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 32%;
+  height: 200rpx;
+}
+.grid .grid_child {
+  border-left: 1px solid rgb(233, 233, 233);
+}
+.grid .grid_child navigator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grid .grid_child navigator view:nth-child(1) {
+  width: 50rpx;
+  height: 50rpx;
+}
+.grid .grid_child navigator view:nth-child(1) image {
+  width: 100%;
+  height: 100%;
+}
+.grid .grid_child navigator view:nth-child(2) {
+  font-size: 25rpx;
+}
+.bottom_img {
+  padding: 20rpx 10rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom_img  image {
+  width: 48%;
+}

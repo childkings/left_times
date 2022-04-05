@@ -1,0 +1,20 @@
+<!--pages/home/home.wxml-->
+<block>
+  <swiper	indicator-dots>
+    <swiper-item wx:for="{{swiperList}}" wx:key="id">
+      <image src="{{item.image}}"></image>
+    </swiper-item>
+  </swiper>
+  <view class="grid">
+    <view class="grid_child" wx:for="{{gridList}}">
+      <navigator url="/pages/shoping/shoping?id={{item.id}}&name={{item.name}}">
+        <view><image src="{{item.icon}}"></image></view>
+        <view><text>{{item.name}}</text></view>
+      </navigator>
+    </view>
+  </view>
+  <view class="bottom_img">
+    <image src="/static/images/link-01.png" mode="widthFix"></image>
+    <image src="/static/images/link-02.png" mode="widthFix"></image>
+  </view>
+</block>
